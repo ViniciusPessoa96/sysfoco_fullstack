@@ -1,0 +1,4 @@
+INSERT INTO status_fase (codigo_status, descricao_status) VALUES
+    ('AGUARDANDO', 'Aguardando'),
+    ('APROVADO', 'Aprovado'),
+    ('INDEFERIDO', 'Indeferido');

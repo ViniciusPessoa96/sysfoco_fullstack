@@ -1,0 +1,5 @@
+codigo_cliente, nome, rg, cpf, endereco, fone
+0001, José Silva, 11.111.111-1, 12312312312, Rua das Flores nº 10, (11) 9999-9999
+0002, Maria Souza, 22.222.222-2, 23423423423, Rua das Abelhas nº 20, (11) 8888-8888
+0003, Lucia Santos, 33.333.333-3, 34534534534, Rua das Ovelhas nº 30, (11) 7777-7777
+0004, Pedro Andrade, 44.444.444-4, 45645645645, Rua do Sol nº 40, (11) 6666-6666

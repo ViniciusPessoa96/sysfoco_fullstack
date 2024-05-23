@@ -1,0 +1,45 @@
+CREATE TABLE cliente (
+    codigo_cliente INT PRIMARY KEY,
+    nome VARCHAR(255),
+    rg VARCHAR(20),
+    cpf VARCHAR(14),
+    endereco VARCHAR(255),
+    fone VARCHAR(20)
+);
+
+CREATE TABLE documentos (
+    codigo_cliente INT,
+    nome_documento VARCHAR(255),
+    FOREIGN KEY (codigo_cliente) REFERENCES cliente(codigo_cliente)
+);
+
+CREATE TABLE processo (
+    numero_processo INT PRIMARY KEY,
+    codigo_cliente INT,
+    tipo_processo VARCHAR(50),
+    FOREIGN KEY (codigo_cliente) REFERENCES cliente(codigo_cliente)
+);
+
+CREATE TABLE fase_do_processo (
+    numero_processo INT,
+    codigo_fase VARCHAR(10),
+    data_inicio DATE,
+    data_fim DATE,
+    codigo_status VARCHAR(10),
+    observacao TEXT,
+    PRIMARY KEY (numero_processo, codigo_fase),
+    FOREIGN KEY (numero_processo) REFERENCES processo(numero_processo),
+    FOREIGN KEY (codigo_fase) REFERENCES fases(codigo_fase)
+    FOREIGN KEY (codigo_status) REFERENCES status_fase(codigo_status)
+);
+
+CREATE TABLE fases (
+    codigo_fase VARCHAR(10) PRIMARY KEY,
+    descricao_fase VARCHAR(255),
+);
+
+CREATE TABLE status_fase (
+    codigo_status VARCHAR(10) PRIMARY KEY,
+    descricao_status VARCHAR(255),
+);
+

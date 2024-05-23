@@ -1,0 +1,106 @@
+*{
+    font-family: karla;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.cabecario{
+    margin-bottom: 2em;
+}
+
+.cabecario a {
+    color: black;
+}
+
+.login{
+    float: left;
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table{
+    width: 75% !important;
+    align-items: normal;
+}
+
+.voltar{
+    margin-left: 13%;
+    width: 22px;
+}
+
+.voltar i{
+    font-size: 27px;
+}
+
+.tabela i{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tabela li{
+    list-style: none;
+}
+
+.tabela ul{
+    display: inline;
+}
+
+.editar{
+    color: blue;
+}
+
+.lixo{
+    color: red;
+}
+
+.registro{
+    padding: 1em;
+}
+
+.fases.col-5{
+    margin-top: 2.5em;
+}
+
+.botao{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1.8em;
+}
+
+.cale{
+    border-radius: 1px;
+}
+
+h6 {
+    color: #757575 !important;
+}
+
+.icon-grid {
+    height: 200px; /* Set a fixed height for the div */
+    overflow-y: auto; /* Add vertical scrollbar */
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: none;
+  }
+
+.icon-grid div {
+    padding: 10px;
+}
+
+.icon-grid .icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+  }
+
+.icon-grid .icon img {
+    width: 100%;
+    height: 100%;
+  }

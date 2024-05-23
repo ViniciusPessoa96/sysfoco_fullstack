@@ -1,0 +1,7 @@
+INSERT INTO fases (codigo_fase, descricao_fase) VALUES
+    ('DOC_INICIAL', 'Documentação inicial'),
+    ('ANALISE', 'Análise'),
+    ('PROC_INTERN', 'Processos internos'),
+    ('PERICIA', 'Perícia'),
+    ('SEGURADORA', 'Seguradora'),
+    ('RECEBIMENTO', 'Recebimento');
